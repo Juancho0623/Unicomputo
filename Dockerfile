@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
         libpq-dev \
         libpng-dev \
         libjpeg-dev \
+        libonig-dev \
         && \
     docker-php-ext-install pdo pdo_mysql pdo_pgsql mbstring gd && \
     a2enmod rewrite
